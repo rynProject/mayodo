@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dim15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                app:cardCornerRadius="@dimen/dim5dp">
+
+                <ImageView
+                    android:id="@+id/imgevn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_img" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_cat"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/loading"
+                android:textColor="@color/app_main_color"
+                android:textSize="@dimen/exsmallText" />
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="3"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/loading"
+                android:textColor="@color/blackcolor"
+                android:textSize="@dimen/smallText"
+                />
+
+            <TextView
+                android:id="@+id/texttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/time_small_gray"
+                android:drawablePadding="5dp"
+                android:gravity="left"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/loading"
+                android:textSize="@dimen/exsmallText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

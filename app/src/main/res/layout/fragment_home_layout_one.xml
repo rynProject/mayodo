@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#d4faf8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="com.itechnotionaklamtech.HomeFragment">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/rr12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/dim15dp"
+                    android:layout_marginTop="@dimen/dim10dp"
+                    android:layout_marginBottom="@dimen/dim10dp"
+                    android:layout_marginRight="@dimen/dim15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/feature_news"
+                            android:textColor="@color/blackcolor"
+                            android:textSize="@dimen/titletext"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|end"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/allFeature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="@string/all"
+                            android:layout_gravity="center|end"
+                            android:textColor="@color/app_main_color"
+                            android:textSize="@dimen/primeryText"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:paddingBottom="@dimen/dim10dp"
+                    android:paddingTop="@dimen/dim10dp"
+                    card_view:cardElevation="8dp">
+                    <LinearLayout
+                        android:id="@+id/related"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:nestedScrollingEnabled="false" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:scrollbars="none"
+                    android:layout_marginTop="@dimen/dim10dp"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:listitem="@layout/homehorizontalitem"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_latest_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim15dp"
+                    android:layout_marginRight="@dimen/dim15dp"
+                    android:layout_marginTop="@dimen/dim10dp"
+                    android:layout_marginBottom="@dimen/dim10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/settextitem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/loading"
+                            android:textAllCaps="false"
+                            android:textColor="@color/blackcolor"
+                            android:textSize="@dimen/titletext"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtalldata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:layout_gravity="center|end"
+                            android:text="@string/all"
+                            android:textColor="@color/app_main_color"
+                            android:textSize="@dimen/primeryText"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardElevation="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dim5dp"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dim5dp">
+                        <TextView
+                            android:id="@+id/tvdatanotfound"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="NO Data Available"
+                            android:textColor="@color/blackcolor"
+                            android:textSize="@dimen/titletext"
+                            android:visibility="gone"/>
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvevnments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:id="@+id/rr123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dim10dp"
+                    android:layout_marginBottom="@dimen/dim10dp"
+                    android:layout_marginLeft="@dimen/dim15dp"
+                    android:layout_marginRight="@dimen/dim15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_all_latest_news_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Latest News"
+                            android:textAllCaps="false"
+                            android:textColor="@color/blackcolor"
+                            android:textSize="@dimen/titletext"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_all_latest_news"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                           android:layout_gravity="center|end"
+                            android:text="@string/all"
+                            android:textColor="@color/app_main_color"
+                            android:textSize="@dimen/primeryText"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardElevation="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dim5dp"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dim5dp">
+                        <TextView
+                            android:id="@+id/txt_latest_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="NO Data Available"
+                            android:textColor="@color/blackcolor"
+                            android:textSize="@dimen/titletext"
+                            android:visibility="gone"/>
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_latest_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="50dp"
+                            android:nestedScrollingEnabled="false"
+                            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+<!--    <com.google.android.gms.ads.AdView-->
+<!--    xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--    android:id="@+id/adView"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_alignParentBottom="true"-->
+<!--    android:layout_gravity="bottom|end"-->
+<!--    ads:adSize="BANNER"-->
+<!--    ads:adUnitId="@string/banner_app_id">-->
+
+<!--</com.google.android.gms.ads.AdView>-->
+    </RelativeLayout>
+</RelativeLayout>

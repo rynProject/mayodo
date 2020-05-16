@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4faf8f8"
+    tools:context="com.mayodo.news.Contactus.ContactusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d4faf8f8"
+        android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dim15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/Lagetext"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim10dp"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/secondaryText"
+            android:hint="@string/full_name"
+            android:background="@drawable/edittext_round_shap"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="text"
+            android:maxLength="30"
+            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:elevation="2dp"
+            android:layout_marginRight="@dimen/dim10dp"
+            android:layout_marginLeft="@dimen/dim10dp"
+            android:textColorHint="@color/graycolor_dark" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_round_shap"
+            android:hint="@string/email"
+            android:textSize="@dimen/secondaryText"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:maxLength="50"
+            android:elevation="2dp"
+            android:layout_marginRight="@dimen/dim10dp"
+            android:layout_marginLeft="@dimen/dim10dp"
+            android:textColorHint="@color/graycolor_dark" />
+
+        <EditText
+            android:id="@+id/edtMsg"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_round_shap"
+            android:lines="8"
+            android:gravity="top|left"
+            android:hint="@string/brief_message"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:paddingLeft="20dp"
+            android:textSize="@dimen/secondaryText"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="150"
+            android:elevation="2dp"
+            android:layout_marginRight="@dimen/dim10dp"
+            android:layout_marginLeft="@dimen/dim10dp"
+            android:layout_marginBottom="@dimen/dim10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColorHint="@color/graycolor_dark" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/sendbtn"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/primeryText" />
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

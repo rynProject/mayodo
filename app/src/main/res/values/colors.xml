@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--change all app color-->
+    <color name="app_main_color">#007aff</color>
+
+    <!--change componant background color-->
+    <color name="white_color">#FFFFFF</color>
+
+    <!--change font color-->
+    <color name="blackcolor">#000</color>
+
+    <!--change devider color-->
+    <color name="graycolor">#b5efebeb</color>
+    <color name="graycolor_light">#dbd7d5d5</color>
+
+    <!--change text hint color-->
+    <color name="graycolor_dark">#dc8e8989</color>
+
+    <!--change layout background color-->
+    <color name="off_white">#d4faf8f8</color>
+</resources>

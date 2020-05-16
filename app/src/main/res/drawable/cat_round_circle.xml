@@ -1,0 +1,36 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <shape android:shape="oval">
+            <!--<corners-->
+                <!--android:radius="100dp"-->
+                <!--/>-->
+            <solid android:color="#fff"/>>
+            <stroke android:color="#007aff" />
+            <!--corners allow us to make the rounded corners button-->
+
+            <size android:height="35dp" android:width="35dp"/>
+
+        </shape>
+    </item>
+    <!--  <item
+          android:state_pressed="true"
+          android:state_focused="true">
+          <shape
+              android:innerRadiusRatio="1"
+              android:shape="rectangle" >
+              <solid android:color="#478df9"/>
+              <padding
+                  android:bottom="10dp"
+                  android:left="10dp"
+                  android:right="10dp"
+                  android:top="10dp" />
+          </shape></item>-->
+    <!--   <item android:name="android:textAllCaps">false</item>-->
+    <!--  <item android:state_pressed="true"
+          android:color="#2c4f59"/> &lt;!&ndash; pressed &ndash;&gt;
+      <item android:state_focused="true"
+          android:color="#2c4f59"/> &lt;!&ndash; focused &ndash;&gt;
+      <item android:color="#d9ecf1"/>-->
+</selector>

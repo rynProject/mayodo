@@ -1,0 +1,66 @@
+<resources>
+
+    <string name="app_name"><b>Mayodo</b> ID </string>
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open the navigation drawer</string>
+    <string name="navigation_drawer_close">Close the navigation drawer</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="feature_news">Feature News</string>
+    <string name="all">ALL</string>
+    <string name="imguppertext">SANTE</string>
+    <string name="hello_blank_fragment">Hello virgin fragment</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="brief_message">Brief message</string>
+    <string name="sendbtn">Send</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Push Notification</string>
+    <string name="aboutus">About Us</string>
+    <string name="ok">Ok</string>
+    <string name="something_went_wrong">Somethings want wrong</string>
+    <string name="imageupertext">img_uper_text</string>
+    <string name="datetime">date_time</string>
+    <string name="please_wait">Please wait</string>
+    <string name="errUsernameRequired">Email is required</string>
+    <string name="errUsernamelength">Length between 3 and 30 characters required</string>
+    <string name="errUsernamelength2">Length between 3 and 250 characters required</string>
+    <string name="errUsernamelength1">Length between 3 and 50 characters required</string>
+    <string name="pleaseentervalidemailaddress">Please enter valid email address</string>
+    <string name="fullnamefieldisrequired">Full name field is required</string>
+    <string name="messageisrequired">Message is required</string>
+    <string name="no_records_available">No Records Available</string>
+    <string name="source">Source</string>
+    <string name="add_comments">Add Comments</string>
+    <string name="comment">Comment</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="share">Share</string>
+    <string name="unlike">Unlike</string>
+    <string name="like">Like</string>
+    <string name="app_is_not_installed">App is not installed</string>
+
+    <string name="banner_app_id">ca-app-pub-xxxxxxxxxxxxxxxx/xxxxxxxxxx</string>
+    <string name="intertatial_ad_id">ca-app-pub-xxxxxxxxxxxxxxxx/xxxxxxxxxx</string>
+
+    <!--Live tv url-->
+    <string name="video_url">https://www.youtube.com/channel/UCiO56RJs1_HSN-TGv5jDOdA</string>
+
+    <string name="error_player" />
+    <string name="home">Home</string>
+    <string name="live_tv">Live Tv</string>
+    <string name="categories">Categories</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="faq">FAQ</string>
+    <string name="evenements">Evenements</string>
+    <string name="Unlike">Unlike</string>
+    <string name="related">Related</string>
+    <string name="notavailaberelatedpost">Not available related post</string>
+    <string name="comments">Comments</string>
+    <string name="do_not_miss">DO NOT MISS</string>
+    <string name="rating">Rating</string>
+    <string name="loading">Loading...</string>
+    <string name="clearcache">Clear Cache</string>
+    <string name="interval_time">Interval Time</string>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d4faf8f8"
+    tools:context="com.mayodo.news.comment.AddCommentActivity">
+    <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:id="@+id/AppBar"
+    android:layout_height="wrap_content">
+    <include
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d4faf8f8"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_comments"
+                android:visibility="gone"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/blackcolor"
+                android:textSize="@dimen/titletext"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comments"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingTop="@dimen/dim5dp"
+                android:id="@+id/tv_title"
+                android:textColor="@color/blackcolor"
+                android:textSize="@dimen/titletext"
+                android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim10dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_round_shap"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:maxLength="30"
+                android:elevation="2dp"
+                android:layout_marginRight="@dimen/dim10dp"
+                android:layout_marginLeft="@dimen/dim10dp"
+                android:textSize="@dimen/secondaryText"
+                android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/graycolor_dark" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/secondaryText"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_round_shap"
+                android:hint="@string/email"
+                android:maxLength="50"
+                android:elevation="2dp"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginRight="@dimen/dim10dp"
+                android:layout_marginLeft="@dimen/dim10dp"
+                android:textColorHint="@color/graycolor_dark" />
+
+            <EditText
+                android:id="@+id/edt_comment"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:textSize="@dimen/secondaryText"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM"
+                android:background="@drawable/edittext_round_shap"
+                android:lines="8"
+                android:elevation="2dp"
+                android:layout_marginBottom="@dimen/dim10dp"
+                android:layout_marginRight="@dimen/dim10dp"
+                android:layout_marginLeft="@dimen/dim10dp"
+                android:gravity="top|left"
+                android:hint="@string/comment"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:maxLength="150"
+                android:textColorHint="@color/graycolor_dark" />
+        </LinearLayout>
+            <Button
+                android:id="@+id/btn_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/sendbtn"
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/primeryText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

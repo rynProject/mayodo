@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1027481924858",
+    "firebase_url": "https://mayodo-ced27.firebaseio.com",
+    "project_id": "mayodo-ced27",
+    "storage_bucket": "mayodo-ced27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027481924858:android:dd03834c3f054cbc8f4543",
+        "android_client_info": {
+          "package_name": "com.mayodo.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027481924858-olutd6eh6hqkorol5ugqkpam3m922nap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0e8BQxX3MMIvPYZ2hitiHpLRAbocEfcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027481924858-olutd6eh6hqkorol5ugqkpam3m922nap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

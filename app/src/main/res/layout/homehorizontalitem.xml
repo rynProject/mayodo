@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/smallText"
+    android:paddingBottom="@dimen/dim5dp"
+    android:paddingTop="7dp"
+    android:paddingLeft="@dimen/dim15dp"
+    android:paddingRight="@dimen/dim15dp"
+    android:id="@+id/listtext"
+    android:fontFamily="@font/poppins_bold"
+    android:gravity="center"
+    android:background="@drawable/disablebutton"
+    android:textColor="@color/white_color"
+    android:text="@string/loading"/>
+</LinearLayout>
